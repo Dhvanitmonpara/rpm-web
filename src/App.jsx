@@ -31,7 +31,7 @@ const App = () => {
           {/* Suspense with fallback to show loading indicator */}
           <Suspense fallback={<Html center>Loading...</Html>}>
             <ReadyPlayerMeAvatar
-              url="https://models.readyplayer.me/676811a8d6c3d8fa1af43c60.glb"
+              url={import.meta.env.VITE_RPM_URL}
               ref={avatarRef}
               position={[0, -0.5, 0]}
             />
